@@ -16,5 +16,5 @@ setup(
     version=VERSION,
     install_requires=load_requirements("requirements.txt"),
     package_dir={'mython': 'mython'},  # package 名 : directory 名
-    packages=find_packages(where="mython"),
+    # packages=find_packages(where="mython"),
 )
