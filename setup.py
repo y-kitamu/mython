@@ -18,5 +18,5 @@ setup(
     version=VERSION,
     url="https://github.com/y-kitamu/mython",
     install_requires=load_requirements("requirements.txt"),
-    packages=["mython"],
+    packages=["mython", "mython.debug", "mython.ml"],
 )
