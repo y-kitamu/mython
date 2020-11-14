@@ -18,5 +18,5 @@ setup(
     version=VERSION,
     url="https://github.com/y-kitamu/mython",
     install_requires=load_requirements("requirements.txt"),
-    packages=find_packages(where="mython"),
+    packages=["mython"],
 )
