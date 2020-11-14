@@ -3,7 +3,9 @@ from setuptools import setup, find_packages
 
 
 def load_requirements(f):
-    return list(filter(None, [l.split("#", 1)[0].strip() for l in open(os.path.join(os.getcwd(), f)).readlines()]))
+    return list(
+        filter(None,
+               [l.split("#", 1)[0].strip() for l in open(os.path.join(os.getcwd(), f)).readlines()]))
 
 
 init = os.path.join(os.path.dirname(__file__), "mython", "__init__.py")
@@ -14,7 +16,7 @@ VERSION = ".".join(["{}".format(x) for x in eval(version_line.split("=")[-1])])
 setup(
     name="mython",
     version=VERSION,
+    url="https://github.com/y-kitamu/mython",
     install_requires=load_requirements("requirements.txt"),
-    package_dir={'mython': 'mython'},  # package 名 : directory 名
-    # packages=find_packages(where="mython"),
+    packages=find_packages(where="mython"),
 )
