@@ -1,7 +1,7 @@
 import pdb, traceback, sys, code
 
 
-def start_pdb(func):
+def run_debug(func):
     """Start pdb debugger at where the `func` throw Exception.
     """
     try:

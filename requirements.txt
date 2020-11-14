@@ -4,3 +4,4 @@ python-language-server
 pytest
 pytest-cov
 ptvsd>=4.2
+pillow
